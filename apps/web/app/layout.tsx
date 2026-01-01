@@ -23,7 +23,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${display.variable} ${body.variable}`}>{children}</body>
+      <body className={`${display.variable} ${body.variable}`}>
+        <header className="site-header">
+          <div className="nav-wrap">
+            <a href="/" className="brand">
+              Wordbook
+            </a>
+            <nav className="nav-links">
+              <a href="/tags">Tags</a>
+              <a href="/search?query=memory">Search</a>
+              <a href="/search/stream?query=memory">Streaming</a>
+              <a href="/study">Study</a>
+            </nav>
+          </div>
+        </header>
+        {children}
+      </body>
     </html>
   );
 }
