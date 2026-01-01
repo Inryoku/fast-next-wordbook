@@ -1,0 +1,56 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f2ea;
+  --bg-accent: #f0e3d3;
+  --surface: #fffaf2;
+  --ink: #1d1b16;
+  --muted: #5c5248;
+  --accent: #b35c2f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: radial-gradient(circle at top left, var(--bg-accent), var(--bg));
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  letter-spacing: -0.01em;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+}
+
+.card {
+  background: var(--surface);
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 12px 30px rgba(27, 19, 10, 0.08);
+}
+
+.stack {
+  display: grid;
+  gap: 1.5rem;
+}
